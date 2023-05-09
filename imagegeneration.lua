@@ -1,3 +1,6 @@
+
+local file = io.open("asdf.txt", "w")
+
 local tab = {}
 for y=1,8 do
     for x=1,8 do
@@ -5,4 +8,6 @@ for y=1,8 do
     end
     tab[#tab+1] = '\n'
 end
-print(table.concat(tab,""))
+
+file:write(table.concat(tab,""))
+file:close()
