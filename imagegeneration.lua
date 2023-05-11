@@ -1,4 +1,4 @@
-require "bitmap.lua"
+require "ppm"
 
 function example_colorful_stripes()
     local w = 260 * 2
